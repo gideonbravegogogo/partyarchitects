@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#promotion {
+    height: 50px;
+    color: white;
+    font-size: small;
+    padding: 10px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 255, 255, 0.199);
+    width: 100%;
+    height: 130px;
+    padding: 15px;
+    font-size: xx-large;
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    height: 40%;
+    top: 0%;
+    left: 75%;
+    right: 0;
+    font-size: x-large;
+    background-color: rgb(135, 175, 209);
+    border-radius: 10px;
+}
+
+header nav ul li {
+    margin-left: 10px;
+}
+p, span , a, label, input{
+    font-family: cursive;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+
+    color: black;
+}
+
+nav a:hover {
+    color: azure;
+    background-color: rgba(198, 17, 47, 0.495);
+    border-radius: 10px;
+}
+
+nav li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+main {
+    background-color: rgba(255, 255, 0, 0.175);
+    width: 100%;
+    font-size: xx-large;
+}
+
+main p,
+main section,
+main h1 {
+    padding: 10px;
+}
+
+main article p,
+main article span,
+main section span {
+    font-size: large;
+}
+
+article {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 5px solid rgba(33, 3, 3, 0.779);
+    height: 700px;
+    margin: 200px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+article span,
+article p {
+    padding: 40px;
+}
+
+footer {
+    background-color: rgba(0, 128, 0, 0.316);
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+form input {
+    height: 30px;
+    border: black solid 5px;
+    initial-value: 'hello';
+}
+
+footer form {
+    font-size: xx-large;
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 193, 167, 0.177);
+    display: flex;
+}
+
+.banner ul {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 115, 0.229);
+    list-style: none;
+    display: flex;
+}
+
+.banner ul li {
+    width: 50px;
+    height: 100%;
+    background-color: rgb(11, 109, 8);
+    margin: 0;
+    margin-right: 70px;
+    animation: bounce 40s infinite alternate;
+}
+
+video {
+    margin: 10%;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(200%, -0%) translateX(0) translateY(0);
+    }
+
+    100% {
+        transform: translate(-5%, 5%) translateX(-300px) translateY(-10px);
+    }
+}
+
+.news-ticker{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.news-text{
+    display: inline-block;
+    animation: slide 25s  ease-in-out infinite;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0%)
+    }
+    100%{
+        transform: translateX(-100%)}    
+}
+
+#products img{
+    filter: none;
+}
+#products img:hover{
+    filter: grayscale(80%);
+}
+.product{
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+}
+button{
+    padding: 5px;
+    margin: 5px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
