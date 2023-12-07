@@ -1,6 +1,16 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
+}
+
+p,span,h1,h2,h3,h4,h5,h6,label,button,input,li,a {
+    text-shadow: 2px 2px 5px black;
+}
+
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
 }
 
 #promotion {
@@ -17,20 +27,22 @@ h1 {
 header {
     background-color: rgba(0, 255, 255, 0.199);
     width: 100%;
-    height: 130px;
+    height: 100px;
     padding: 15px;
     font-size: xx-large;
     position: relative;
+    color: white;
 }
 
 header nav {
     position: absolute;
-    height: 40%;
+    height: 60px;
     top: 0%;
     left: 75%;
     right: 0;
     font-size: x-large;
-    background-color: rgb(135, 175, 209);
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid black;
     border-radius: 10px;
 }
 
@@ -45,7 +57,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     align-items: center;
-
+    margin-top: 10px;
     color: black;
 }
 
@@ -93,7 +105,7 @@ article {
     border: 5px solid rgba(33, 3, 3, 0.779);
     height: 700px;
     margin: 200px;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 20px;
     padding: 20px;
 
@@ -107,6 +119,7 @@ article p {
 footer {
     background-color: rgba(0, 128, 0, 0.316);
     width: 100%;
+    color: white;
     height: 200px;
     padding: 10px;
 }
@@ -123,8 +136,8 @@ footer form {
 
 .banner {
     width: 100%;
-    height: 250px;
-    background-color: rgba(0, 193, 167, 0.177);
+    height: 30px;
+    background-color: rgba(0, 193, 167, 0.0077);
     display: flex;
 }
 
@@ -139,10 +152,11 @@ footer form {
 .banner ul li {
     width: 50px;
     height: 100%;
-    background-color: rgb(11, 109, 8);
+    background-color: rgba(11, 109, 8,0.15);
+    border-radius: 15px;
     margin: 0;
     margin-right: 70px;
-    animation: bounce 40s infinite alternate;
+    animation: bounce 4s infinite alternate;
 }
 
 video {
@@ -150,12 +164,14 @@ video {
 }
 
 @keyframes bounce {
-    0% {
-        transform: translate(200%, -0%) translateX(0) translateY(0);
+    100% {
+        transform: translate(200%, -10%) translateX(0) translateY(0);
+        background-color: gold;
     }
 
-    100% {
+    0% {
         transform: translate(-5%, 5%) translateX(-300px) translateY(-10px);
+        background-color:cyan;
     }
 }
 
@@ -193,4 +209,22 @@ button{
     margin: 5px;
     font-size: xx-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.intro{
+    background-image: url(images/cake.jpg);
+    background-size: cover;
+}
+
+.news{
+    background-image: url(images/news.jpg);
+    background-size: auto;
+}
+.navi{
+    background-image: url(images/navi.jpg);
+    background-size: auto;
+}
+.end{
+    background-image: url(images/end.jpg);
+    background-size: auto;
 }
