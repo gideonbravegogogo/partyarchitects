@@ -1,0 +1,11 @@
+.cropped-image {
+    width: 100%; /* Set the desired width of the container */
+    height: 700px; /* Set the fixed height */
+    overflow: hidden; /* Hide the overflow */
+  }
+
+  .cropped-image img {
+    width: 100%; /* Make sure the image takes 100% of the container width */
+    height: 100%; /* Make sure the image takes 100% of the container height */
+    object-fit: cover; /* Crop the image while maintaining its aspect ratio */
+  }
